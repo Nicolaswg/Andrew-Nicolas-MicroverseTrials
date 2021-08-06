@@ -7,27 +7,92 @@
   </head>
 
   <body>
-
-    <div class="home-page">
- 
- </div>
-
-
-
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
 
-    Hello Camper!
+    <div class="item-cotainer">
+      <form action="" id="survey-form">
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+        <label for="name" id='name-label'>Name</label>
+        <input type="text" id='name' placeholder="Enter your name" required>
 
-    - The freeCodeCamp Team
+        <label for="email" id='email-label'>Email</label>
+        <input type="email" id='email' placeholder="Enter your Email" required>
 
-    -->
+        <label for="number" id='number-label'>Age</label>
+        <input type="number" id='number' placeholder="Enter your name" min='10' max='90'>
+
+        <label for="dropdown"> Which option best describes your current role?</label>
+       
+        <select  name='' id="dropdown">
+          <option id="option1">select current role</option>
+          <option value=""id="option2">Student</option>
+          <option value=""id="option3">Full Time Job</option>
+          <option value=""id="option4">Full Time Learner</option>
+          <option value="" id="option5">Prefer Not To Say</option>
+          <option value="" id="option6">Other</option>
+        </select>
+    
+        <div class="inputRadio">
+        <label for="">Would you recommend freeCodeCamp to a friend</label>
+        <label for="radio1">Definitely</label>
+        <input type="radio" value='Definitely'  id="radio1" name='user-recommend'>
+
+        <label for="radio2">Maybe</label>
+        <input type="radio" value='Maybe'   id="radio2" name='user-recommend'>
+
+        <label for="radio3">Not sure</label>
+        <input type="radio" value='Not sure'   id="radio3" name='user-recommend'>
+
+      </div>
+
+      <div class="inputCheck">
+        <label for="check1">Front-end Projects</label>
+        <input type="checkbox" value="Front-end Projects" id="check1">
+
+        <label for="check2">Back-end-Projects</label>
+        <input type="checkbox" value="Back-end-Projects" id="check2">
+
+        <label for="check3">Data Visualization</label>
+        <input type="checkbox" value="Data Visualization" id="check3">
+
+        <label for="check4">Challenges</label>
+        <input type="checkbox" value="Challenges"   id="check4">
+
+        <label for="check5">Open Source Community</label>
+        <input type="checkbox"  value="Open Source Community" id="check5">
+
+        <label for="check6">Gitter help rooms</label>
+        <input type="checkbox" value="Gitter help rooms" id="check6">
+
+        <label for="check7">Videos</label>
+        <input type="checkbox" value="Videos" id="check7">
+
+        <label for="check8">City Meetups</label>
+        <input type="checkbox" value="City Meetups" id="check8">
+
+        <label for="check9">Wiki</label>
+        <input type="checkbox" value="Wiki" id="check9">
+
+        <label for="check10">Forum</label>
+        <input type="checkbox" value="Forum" id="check10">
+
+        <label for="check11">Additional Courses</label>
+        <input type="checkbox" value="Additional Courses" id="check11">
+        
+        <div class="textArea">
+          <p>Any comments or suggestions?</p>
+          <textarea name="" id="text-area" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="button-container">
+          <button id="submit" class="button-style">Submit</button>
+        </div>
+      </div>
+      </form>
+    </div>
     <script  src="js/index.js"></script>
   </body>
 </html>
