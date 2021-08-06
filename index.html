@@ -3,27 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <title>FCC: Survey</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
+    <div class="item-container">
+      <header class="header">
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
 
-    <div class="item-cotainer">
+    
       <form action="" id="survey-form">
-
+        <div class="data-container">
         <label for="name" id='name-label'>Name</label>
         <input type="text" id='name' placeholder="Enter your name" required>
+        </div>
 
+        <div class="data-container">
         <label for="email" id='email-label'>Email</label>
         <input type="email" id='email' placeholder="Enter your Email" required>
+        </div>
 
+        <div class="data-container">
         <label for="number" id='number-label'>Age</label>
         <input type="number" id='number' placeholder="Enter your name" min='10' max='90'>
-
+      </div>
+      <div class="data-container">
         <label for="dropdown"> Which option best describes your current role?</label>
        
         <select  name='' id="dropdown">
@@ -34,8 +40,9 @@
           <option value="" id="option5">Prefer Not To Say</option>
           <option value="" id="option6">Other</option>
         </select>
-    
-        <div class="inputRadio">
+      </div>
+
+        <div class="data-container2">
         <label for="">Would you recommend freeCodeCamp to a friend</label>
         <label for="radio1">Definitely</label>
         <input type="radio" value='Definitely'  id="radio1" name='user-recommend'>
@@ -45,7 +52,6 @@
 
         <label for="radio3">Not sure</label>
         <input type="radio" value='Not sure'   id="radio3" name='user-recommend'>
-
       </div>
 
       <div class="inputCheck">
